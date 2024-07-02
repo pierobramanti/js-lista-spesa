@@ -1,5 +1,6 @@
 // CREO ARRAY //
 let ingredients = ["Pomodorini", "Tonno in scatola", "Aglio", "Accighe sott'olio", "Capperi", "Olive taggiasche", "Prezzemolo", "Bottarga", "Spaghettoni" ,"Sale Grosso"]
+console.log(ingredients)
 // CREO VARIABILE RECUPERANDO ID "UL"//
 let shopping_list = document. getElementById("shopping-list")
 
@@ -12,3 +13,9 @@ while ( i <ingredients.lenght ){
     shopping_list = append(li)
     i++
 }
+
+// CREO FUNZIONE// 
+
+document.getElementById("new-ingredients"). addEventListener("click", function(){
+
+})
