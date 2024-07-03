@@ -1,21 +1,19 @@
-// CREO ARRAY //
-let ingredients = ["Pomodorini", "Tonno in scatola", "Aglio", "Accighe sott'olio", "Capperi", "Olive taggiasche", "Prezzemolo", "Bottarga", "Spaghettoni" ,"Sale Grosso"]
-console.log(ingredients)
-// CREO VARIABILE RECUPERANDO ID "UL"//
-let shopping_list = document. getElementById("shopping-list")
+// LISTA DELLA SPESA
+const ingredients = ["Pomodorini", "Tonno in scatola", "Aglio", "Accighe sott'olio", "Capperi", "Olive taggiasche", "Prezzemolo", "Bottarga", "Spaghettoni" ,"Sale Grosso"]
 
-// CREO CICLO WHILE //
-let i= 0
+// RECUPERO L'ELEMENTO CHE DEVE CONTENERE LA MIA LISTA DELLA SPESA
+const shopping_list = document.getElementById("shopping-list");
 
-while ( i <ingredients.lenght ){
-    let li= document.createElement("li")
-    li.innerHTML= ingredients[i]
-    shopping_list = append(li)
-    i++
+// CICLO L'ARRAY CON UN WHILE
+let i = 0;
+while (i < ingredients.length) {
+
+    const li = document.createElement("li");
+
+    li.innerText = ingredients[i];
+
+    
+    shopping_list.append(li);
+
+    i++;
 }
-
-// CREO FUNZIONE// 
-
-document.getElementById("new-ingredients"). addEventListener("click", function(){
-
-})
